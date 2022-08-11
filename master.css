@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rubik:ital,wght@1,300&display=swap');
+* {
+    font-family: 'Inconsolata', monospace;
+    outline: none;
+}
+
+.phone p {
+    display: none;
+}
+
+
+/*SECTION ONE*/
+
+body {
+    background: rgb(237, 235, 242);
+    background: linear-gradient(125deg, rgba(237, 235, 242, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(0, 229, 255, 0.9732843821122199) 100%);
+}
+
+.akka-img {
+    box-shadow: 0 0 15px black;
+    border: 2px black solid;
+    border-radius: 20px;
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    animation: pic 2s;
+}
+
+@keyframes pic {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.heading {
+    margin: 0;
+    font-size: 40px;
+    text-align: center;
+    animation: heading 5s;
+    background-color: black;
+    color: white;
+}
+
+@keyframes heading {
+    0% {
+        font-style: italic;
+    }
+    100% {
+        font-style: none;
+        background-color: black;
+        color: white;
+    }
+}
+
+.txt {
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    box-shadow: 0 0 15px black;
+    padding: 2% 2%;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+    animation: details 2s;
+}
+
+.txt h1 {
+    font-weight: 1000;
+}
+
+.details {
+    padding-bottom: 3%;
+}
+
+@keyframes details {
+    0% {
+        left: -50%;
+        color: black;
+        text-shadow: 0 0 2px white;
+    }
+    100% {
+        left: 25%;
+        color: white;
+        text-shadow: none;
+    }
+}
+
+.socials {
+    border-radius: 20px;
+    margin-top: 0;
+    border: 2px white solid;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    width: 50%;
+}
+
+.socials h2 {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.socials img {
+    width: 15%;
+    vertical-align: middle;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: 0 0 5px white;
+}
+
+.btn a {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.25s;
+}
+
+.btn a:hover {
+    color: rgba(0, 229, 255, 0.9732843821122199);
+    padding: 1%;
+    font-weight: 1000;
+}
+
+@media only screen and (max-width:480px) {
+    section {
+        display: none;
+    }
+    .phone p {
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+}
